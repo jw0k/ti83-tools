@@ -23,7 +23,7 @@ It is best to choose a picture with light background. This will later give best 
 
 ![Resized picture](/images/tiger2.png)
 
-Now comes the hardest part - decreasing the color depth. It is often necessary to adjust the brigthness and contrast of the image before decreasing the color depth. Some experimentation is needed to achieve good results. Decreasing the color depth itself can be done in IrfanView which has Floyd-Steinberg dithering algorithm:
+Now comes the hardest part - decreasing the color depth. It is often necessary to adjust the brigthness and contrast of the image before decreasing the color depth. Some experimentation is needed to achieve good results. Decreasing the color depth itself can be done in IrfanView (choose Image->Decrease Color Depth...):
 
 ![Decreasing the color depth](/images/decr.png)
 
