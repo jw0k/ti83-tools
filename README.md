@@ -46,10 +46,10 @@ Here is where **bmpremap.py** comes into rescue. Just run: `bmpremap.py tiger3.p
 This step is easy. Just run `bmp2z80.py tiger4.png -o tiger.asm`. This will generate an asm file with 2 bitmaps. The `dark` bitmap contains dark gray and black pixels and the `light` bitmap contains light gray and black pixels. The trick is to alternate between `dark` and `light` bitmaps in a way that `dark` bitmap is displayed for 2 consecutive frames and `light` bitmap is displayed for 1 frame. This will create 4-level grayscale.
 
 ### Assembling the grayscale displayer
-Before assembling the grayscale displayer you may want to open it (`gray/gray.asm`) in a text editor and replace all the data in `dark` and `light` sections with data generated in the previous step. To assemble it run `spasm gray.asm gray.83p`. Unfortunately there is a bug in current version of SPASM (v0.5-beta.1) that causes the produced 83p file to be of TI-83+ format instead of TI-83. There is currently a pull request that fixes this bug (https://github.com/alberthdev/spasm-ng/pull/40) but as of 11 Mar 2017 it hasn't been merged yet. To fix this problem type `fix83p.py gray.83p grayFixed.83p`.
+Before assembling the grayscale displayer you may want to open it (`gray/gray.asm`) in a text editor and replace all the data in `dark` and `light` sections with data generated in the previous step. To assemble it run `spasm gray.asm tiger.83p`. Unfortunately there is a bug in current version of SPASM (v0.5-beta.1) that causes the produced 83p file to be of TI-83+ format instead of TI-83. There is currently a pull request that fixes this bug (https://github.com/alberthdev/spasm-ng/pull/40) but as of 11 Mar 2017 it hasn't been merged yet. To fix this problem type `fix83p.py tiger.83p tigerFixed.83p`.
 
 ### Running the grayscale displayer in Wabbitemu
-To run the grayscale displayer drag&drop `grayFixed.83p` to the Wabbitemu window. Next, enter the following command in the emulator:
+To run the grayscale displayer drag&drop `tigerFixed.83p` to the Wabbitemu window. Next, enter the following command in the emulator:
 
 ![Wabbitemu1](/images/wabbit1.png)
 
