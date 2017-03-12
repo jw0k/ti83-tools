@@ -8,7 +8,7 @@ Collection of programs useful for preparing a grayscale bitmap (with 4 levels of
 
 **fix83p.py** - fixes incorrect .83p files produced by SPASM Z80 assembler
 
-**gray/gray.asm** - TI-83 assembler program that displays a 4-level grayscale bitmap
+**gray/gray.asm** - TI-83 assembly program that displays a 4-level grayscale bitmap
 
 ## Tutorial
 ### Introduction
