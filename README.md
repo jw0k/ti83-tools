@@ -10,6 +10,8 @@ Collection of programs useful for preparing a grayscale bitmap (with 4 levels of
 
 **gray/gray.asm** - TI-83 assembly program that displays a 4-level grayscale bitmap
 
+Note: **bmpremap** and **bmp2z80** require Pillow. You can install it by typing `pip install Pillow`
+
 ## Tutorial
 ### Introduction
 TI-83 is a classic graphing calculator sporting a monochromatic display with 96x64 pixels. Theoretically it is only possible to display 2 colors on such display - black and white. However we can simulate intermediate levels of gray by rapidly switching pixels between black and white. **Word of caution**: alternating pixels between black and white at frequency close to the LCD refresh rate for a prolonged period of time may degrade the LCD screen. However experimenting on a TI-83 emulator (e.g. Wabbitemu) should be safe :) You will need Python 2.7.x installed on your computer to run scripts, some image editing tool (e.g. IrfanView) and [SPASM](https://github.com/alberthdev/spasm-ng) - a Z80 assembler with TI calculators support.
