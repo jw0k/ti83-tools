@@ -3,8 +3,6 @@
 #define EQU .equ
 #define end .end
 
-#define    b_call(xxxx)        rst 28h    \ .dw xxxx
-
 #include "ti83asm.inc"
 #include "tokens.inc"
 .LIST
@@ -14,16 +12,11 @@
     di
 
     call _runIndicOff
-
     call _ClrLCDFull
 
     ld A, $07 ;set Y auto-increment
     out ($10), A
     call _lcd_busy
-
-    ;ld A, $03
-    ;out ($10), A
-    ;call _lcd_busy
 
 mainLoop:
     ld a, $FD ;enter, +, -, x, /, ^, clear
@@ -155,8 +148,6 @@ drawImage:
 
     jp mainLoop
 
-    ;call _getkey
-
 quit:
     call _ClrLCDFull
 
@@ -204,7 +195,7 @@ delayLoop
     ret
 
 delayValue:
-    .dw 2216
+    .dw 1060
 
 modeTimer:
     .dw 0
