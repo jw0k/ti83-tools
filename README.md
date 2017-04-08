@@ -60,3 +60,7 @@ The `Send(9` is a hidden feature of TI-83 which lacks the `Asm` command found on
 ![Wabbitemu2](/images/wabbit2.png)
 
 You can adjust frequency by modifing delay between frames using up/down arrows for coarse adjustments and left/right arrows for fine adjustments. It is also possible to adjust LCD parameters in Wabbitemu options.
+
+### Running the grayscale displayer on a real TI-83
+
+To run the grayscale displayer on a real TI-83 you will need to upload `tigerFixed.83p` to your calculator using some linking program, preferably **TiLP**. For details on how to connect a TI-83 to a computer see https://github.com/jw0k/serial2ti83
